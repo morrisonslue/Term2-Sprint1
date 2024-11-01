@@ -1,0 +1,482 @@
+/* 
+Description: Global and individual stylings for the Gary Blue's Diner ordering process and related forms
+Authors: Chris Morrison, Steve Morrison - SD12
+Date(s): October 23 - Novemver 1, 2024
+Version 1.0
+*/
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+:root {
+    --medium-red: #8C1F28;
+    --dark-red: #591C21;
+    --bright-red: #D92525;
+    --medium-teal: #044040;
+    --light-gray: #D5D5D5;
+    --dark-gray: #1D1D1D;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+
+header {
+    background-color: var(--dark-red);
+    padding: 1rem 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--light-gray);
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu li:first-child {
+    margin-left: 0;
+}
+
+.nav-menu a {
+    color: var(--light-gray);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--bright-red);
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: var(--bright-red);
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.nav-menu .active {
+    color: var(--bright-red);
+}
+
+.nav-menu .active::after {
+    width: 100%;
+}
+
+/* Hero Section Styling */
+
+.hero-order {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-order .hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-order .hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.6);
+    top: 0;
+    left: 0;
+}
+
+.hero-order .hero-content {
+    position: relative;
+    text-align: center;
+    color: var(--light-gray);
+    z-index: 1;
+    padding: 0 1rem;
+}
+
+.hero-order h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.hero-order p {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Steps Section */
+
+.steps-section {
+    padding: 4rem 0;
+    background-color: var(--light-gray);
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+}
+
+.step img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    color: var(--medium-red);
+    margin-bottom: 0.5rem;
+}
+
+.step p {
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+
+/* Order Section */
+
+.order-section {
+    padding: 4rem 0;
+}
+
+.order-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--medium-red);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+#delivery-info, #order-form-section, #payment-summary {
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: var(--medium-red);
+    margin-bottom: 1rem;
+}
+
+form {
+    background-color: var(--light-gray);
+    padding: 2rem;
+}
+
+#delivery-form {
+    border-radius: 10px 10px 0 0;
+}
+
+#order-form {
+    border-radius: 10px 10px 0 0;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--medium-teal);
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--medium-teal);
+    color: var(--light-gray);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--dark-red);
+}
+
+#delivery-info-display {
+    background-color: var(--light-gray);
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+
+#order-summary {
+    background-color: var(--light-gray);
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+
+#order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#order-summary th,
+#order-summary td {
+    border: 1px solid var(--dark-gray);
+    padding: 0.75rem;
+    text-align: center;
+}
+
+#order-summary th {
+    background-color: var(--medium-teal);
+    color: var(--light-gray);
+}
+
+#summary-details p {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+#grand-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#payment-summary {
+    background-color: var(--light-gray);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#payment-summary form {
+    border-radius: 10px 10px 0 0;
+}
+
+#payment-summary #summary-details {
+    margin-top: 1rem;
+}
+
+#delivery-fee, #tax-amount, #order-total, #gratuity-amount, #grand-total {
+    font-weight: bold;
+}
+
+#gratuity {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--medium-teal);
+    border-radius: 5px;
+}
+
+#gratuity[disabled] {
+    background-color: #e0e0e0;
+}
+
+#edit-delivery-info {
+    margin-top: 1rem;
+    background-color: var(--bright-red);
+}
+
+#edit-delivery-info:hover {
+    background-color: var(--dark-red);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark-red);
+    color: var(--light-gray);
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-content > div {
+    flex: 1;
+    padding: 1rem;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--light-gray);
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-content ul li a {
+    color: var(--light-gray);
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-content ul li a:hover {
+    color: var(--bright-red);
+}
+
+.footer-content p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-content p img {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-content img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info .social-media {
+    margin-top: 1rem;
+}
+
+.contact-info .social-media a {
+    margin-right: 0.5rem;
+}
+
+/* Newsletter Styles */
+
+.newsletter {
+    text-align: right;
+    padding: 1rem 0;
+}
+
+.newsletter h3 {
+    margin-bottom: 1rem;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5rem;
+    width: 250px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    padding: 0.5rem;
+    background-color: var(--medium-teal);
+    border: none;
+    color: var(--light-gray);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.newsletter p {
+    margin-top: 0.5rem;
+    color: var(--light-gray);
+}
+
+.newsletter,
+.newsletter form {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+}
+
+.quick-links {
+    text-align: left;
+}
+

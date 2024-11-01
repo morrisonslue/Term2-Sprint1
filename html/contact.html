@@ -1,0 +1,262 @@
+<!--
+Description: contact us page and form for the diner
+Authors: Chris Morrison, Steve Morrison - SD12
+Date(s): October 23 - Novemver 1, 2024
+Version 1.0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Gary Blue's Diner</title>
+    <link rel="icon" href="../icons/burger.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    GARY BLUE'S DINER
+                </a>
+            </div>
+            <nav id="navbar">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="menu.html">
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="order.html">
+                            Order Online
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservations.html">
+                            Reservations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="active">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-image-wrapper">
+            <img src="../images/overhead_table_food_friends_vertical_image.jpg" alt="Contact Us" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>
+                Get in Touch
+            </h1>
+            <p>
+                We'd love to hear from you!
+            </p>
+        </div>
+    </section>
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <img src="../images/kitchen_bright_horizontal_image.jpg" alt="Our Location">
+                    <div class="card-overlay">
+                        <h3>
+                            Our Location
+                        </h3>
+                        <p>
+                            644 Topsail Rd,<br>St. John's, NL, A1E 2E3
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <img src="../images/dinner_with_friends_hands_only_horizontal_image.jpg" alt="Call Us">
+                    <div class="card-overlay">
+                        <h3>
+                            Call Us
+                        </h3>
+                        <p>
+                            (709) 123-4567
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <img src="../images/top_down_shot_of_burger_horizontal_image.jpg" alt="Email Us">
+                    <div class="card-overlay">
+                        <h3>
+                            Email Us
+                        </h3>
+                        <p>
+                            info@garybluesdiner.com
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <img src="../images/restaurant_background_blurry_horizontal_image.jpg" alt="Follow Us">
+                    <div class="card-overlay">
+                        <h3>
+                            Follow Us
+                        </h3>
+                        <div class="social-media">
+                            <a href="#"><img src="../icons/facebook.svg" alt="Facebook">
+                            </a>
+                            <a href="#"><img src="../icons/instagram.svg" alt="Instagram">
+                            </a>
+                            <a href="#"><img src="../icons/twitter.svg" alt="Twitter">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>
+                Send Us a Message
+            </h2>
+            <form id="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-name">
+                            Your Name:
+                        </label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">
+                            Your Email:
+                        </label>
+                        <input type="email" id="contact-email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contact-subject">
+                        Subject:
+                    </label>
+                    <input type="text" id="contact-subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">
+                        Message:
+                    </label>
+                    <textarea id="contact-message" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="submit-contact">
+                    Submit Message
+                </button>
+            </form>
+            <div id="form-message"></div>
+        </div>
+    </section>
+    <section class="map-section">
+        <div class="container">
+            <h2>
+                Find Us Here
+            </h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21553.455009770216!2d-52.80882682568356!3d47.525321999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca30dfb0485db%3A0xe93e1392e5d6010!2sKeyin%20College!5e0!3m2!1sen!2sca!4v1730430091031!5m2!1sen!2sca" 
+                allowfullscreen="" loading="lazy">
+            </iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="quick-links">
+                    <h3>
+                        Quick Links
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu.html">
+                                Menu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="order.html">
+                                Order Online
+                            </a>
+                        </li>
+                        <li>
+                            <a href="reservations.html">
+                                Reservations
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <h3>
+                        Contact Us
+                    </h3>
+                    <p><img src="../icons/phone.svg" alt="Phone Icon"> 
+                        (709) 123-4567
+                    </p>
+                    <p>
+                        <img src="../icons/email.svg" alt="Email Icon"> 
+                        info@garybluesdiner.com
+                    </p>
+                    <h3>
+                        Social
+                    </h3>
+                    <div class="social-media">
+                        <a href="http://www.facebook.com"><img src="../icons/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com"><img src="../icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.x.com"><img src="../icons/twitter.svg" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h3>
+                        Join Our Newsletter
+                    </h3>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">
+                            Subscribe
+                        </button>
+                        <p id="newsletter-message"></p>
+                    </form>
+                </div>
+            </div>
+            <p class="footer-note">
+                &copy; 2024 Gary Blue's Diner. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
+
+
+

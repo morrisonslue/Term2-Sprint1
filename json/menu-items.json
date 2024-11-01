@@ -1,0 +1,377 @@
+{
+    "menuItems": [
+        {
+            "title": "Classic Caesar Salad",
+            "description": "Fresh romaine lettuce tossed with Caesar dressing, croutons, and parmesan cheese.",
+            "allergyInfo": "Contains dairy and gluten.",
+            "ingredients": ["Romaine lettuce", "Caesar dressing", "Croutons", "Parmesan cheese"],
+            "price": 8.99,
+            "category": "appetizers",
+            "image": "caesar_salad.jpg"
+        },
+        {
+            "title": "Buffalo Wings",
+            "description": "Spicy buffalo wings served with blue cheese dressing.",
+            "allergyInfo": "Contains dairy.",
+            "ingredients": ["Chicken wings", "Buffalo sauce", "Blue cheese dressing"],
+            "price": 9.99,
+            "category": "appetizers",
+            "image": "buffalo_wings.jpg"
+        },
+        {
+            "title": "Garlic Bread",
+            "description": "Toasted baguette slices with garlic butter and herbs.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Baguette", "Garlic butter", "Herbs"],
+            "price": 5.49,
+            "category": "appetizers",
+            "image": "garlic_bread.jpg"
+        },
+        {
+            "title": "Mozzarella Sticks",
+            "description": "Breaded mozzarella sticks served with marinara sauce.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Mozzarella cheese", "Breadcrumbs", "Marinara sauce"],
+            "price": 7.99,
+            "category": "appetizers",
+            "image": "mozzarella_sticks.jpg"
+        },
+        {
+            "title": "Stuffed Mushrooms",
+            "description": "Mushroom caps stuffed with a savory cheese and herb filling.",
+            "allergyInfo": "Contains dairy.",
+            "ingredients": ["Mushrooms", "Cheese", "Herbs"],
+            "price": 6.99,
+            "category": "appetizers",
+            "image": "stuffed_mushrooms.jpg"
+        },
+        {
+            "title": "Shrimp Cocktail",
+            "description": "Chilled shrimp served with classic cocktail sauce.",
+            "allergyInfo": "Contains shellfish.",
+            "ingredients": ["Shrimp", "Cocktail sauce", "Lemon"],
+            "price": 10.99,
+            "category": "appetizers",
+            "image": "shrimp_cocktail.jpg"
+        },
+        {
+            "title": "Big Gary's Signature Burger",
+            "description": "A juicy beef patty topped with cheddar cheese, crispy bacon, and Gary's secret sauce.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Beef patty", "Cheddar cheese", "Bacon", "Lettuce", "Tomato", "Secret sauce"],
+            "price": 12.99,
+            "category": "mains",
+            "image": "signature_burger.jpg"
+        },
+        {
+            "title": "Grilled Ribeye Steak",
+            "description": "Succulent ribeye steak grilled to perfection, served with garlic butter.",
+            "allergyInfo": "Contains dairy.",
+            "ingredients": ["Ribeye steak", "Garlic butter", "Herbs"],
+            "price": 24.99,
+            "category": "mains",
+            "image": "ribeye_steak.jpg"
+        },
+        {
+            "title": "Classic Hot Dogs",
+            "description": "All-beef hot dogs topped with your choice of condiments and relishes.",
+            "allergyInfo": "Contains gluten.",
+            "ingredients": ["Beef hot dog", "Bun", "Condiments"],
+            "price": 5.99,
+            "category": "mains",
+            "image": "hotdogs.jpg"
+        },
+        {
+            "title": "Grilled Chicken Sandwich",
+            "description": "Marinated grilled chicken breast with lettuce, tomato, and mayo on a toasted bun.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Chicken breast", "Lettuce", "Tomato", "Mayo", "Bun"],
+            "price": 11.49,
+            "category": "mains",
+            "image": "chicken_sandwich.jpg"
+        },
+        {
+            "title": "Fish and Chips",
+            "description": "Beer-battered cod served with fries and tartar sauce.",
+            "allergyInfo": "Contains gluten and fish.",
+            "ingredients": ["Cod", "Beer batter", "Fries", "Tartar sauce"],
+            "price": 13.99,
+            "category": "mains",
+            "image": "fish_and_chips.jpg"
+        },
+        {
+            "title": "Spaghetti Bolognese",
+            "description": "Classic spaghetti with a rich meat sauce and parmesan cheese.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Spaghetti", "Meat sauce", "Parmesan cheese"],
+            "price": 12.49,
+            "category": "mains",
+            "image": "spaghetti.jpg"
+        },
+        {
+            "title": "Homestyle Apple Pie",
+            "description": "Warm apple pie with a flaky crust, served with vanilla ice cream.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Apples", "Pie crust", "Cinnamon", "Vanilla ice cream"],
+            "price": 6.99,
+            "category": "desserts",
+            "image": "apple_pie.jpg"
+        },
+        {
+            "title": "Cheesecake",
+            "description": "Classic New York-style cheesecake with a graham cracker crust.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Cream cheese", "Graham crackers", "Sugar"],
+            "price": 7.49,
+            "category": "desserts",
+            "image": "cheesecake.jpg"
+        },
+        {
+            "title": "Chocolate Lava Cake",
+            "description": "Warm chocolate cake with a gooey molten center.",
+            "allergyInfo": "Contains gluten, dairy, and eggs.",
+            "ingredients": ["Chocolate", "Flour", "Butter", "Eggs"],
+            "price": 7.99,
+            "category": "desserts",
+            "image": "lava_cake.jpg"
+        },
+        {
+            "title": "Strawberry Shortcake",
+            "description": "Layers of sponge cake, fresh strawberries, and whipped cream.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Sponge cake", "Strawberries", "Whipped cream"],
+            "price": 6.49,
+            "category": "desserts",
+            "image": "strawberry_shortcake.jpg"
+        },
+        {
+            "title": "Banana Split",
+            "description": "Classic banana split with vanilla, chocolate, and strawberry ice cream.",
+            "allergyInfo": "Contains dairy and nuts.",
+            "ingredients": ["Banana", "Ice cream", "Chocolate sauce", "Nuts"],
+            "price": 6.99,
+            "category": "desserts",
+            "image": "banana_split.jpg"
+        },
+        {
+            "title": "Lemon Tart",
+            "description": "Tangy lemon filling in a buttery tart shell.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Lemon", "Sugar", "Butter", "Flour"],
+            "price": 5.99,
+            "category": "desserts",
+            "image": "lemon_tart.jpg"
+        },
+        {
+            "title": "Fresh Lemonade",
+            "description": "Refreshing lemonade made with freshly squeezed lemons.",
+            "size": "16 oz",
+            "price": 2.99,
+            "category": "drinks",
+            "image": "lemonade.jpg"
+        },
+        {
+            "title": "Chocolate Milkshake",
+            "description": "Creamy chocolate milkshake topped with whipped cream.",
+            "size": "12 oz",
+            "price": 3.99,
+            "category": "drinks",
+            "image": "milkshake.jpg"
+        },
+        {
+            "title": "Iced Tea",
+            "description": "Chilled black tea served over ice with a lemon wedge.",
+            "size": "16 oz",
+            "price": 2.49,
+            "category": "drinks",
+            "image": "iced_tea.jpg"
+        },
+        {
+            "title": "Coffee",
+            "description": "Freshly brewed hot coffee.",
+            "size": "12 oz",
+            "price": 1.99,
+            "category": "drinks",
+            "image": "coffee.jpg"
+        },
+        {
+            "title": "Orange Juice",
+            "description": "100% pure squeezed orange juice.",
+            "size": "12 oz",
+            "price": 2.79,
+            "category": "drinks",
+            "image": "orange_juice.jpg"
+        },
+        {
+            "title": "Soft Drinks",
+            "description": "Choice of cola, diet cola, lemon-lime, or root beer.",
+            "size": "16 oz",
+            "price": 1.89,
+            "category": "drinks",
+            "image": "soft_drink.jpg"
+        },
+        {
+            "title": "Gary's Special Meatloaf",
+            "description": "Homemade meatloaf served with mashed potatoes and gravy.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Ground beef", "Breadcrumbs", "Mashed potatoes", "Gravy"],
+            "price": 13.99,
+            "category": "specials",
+            "image": "meatloaf.jpg"
+        },
+        {
+            "title": "BBQ Baby Back Ribs",
+            "description": "Tender ribs glazed with our house BBQ sauce, served with coleslaw.",
+            "allergyInfo": "Contains gluten.",
+            "ingredients": ["Pork ribs", "BBQ sauce", "Coleslaw"],
+            "price": 18.99,
+            "category": "specials",
+            "image": "bbq_ribs.jpg"
+        },
+        {
+            "title": "Seafood Platter",
+            "description": "An assortment of fried shrimp, calamari, and fish fillets.",
+            "allergyInfo": "Contains shellfish and gluten.",
+            "ingredients": ["Shrimp", "Calamari", "Fish", "Batter"],
+            "price": 21.99,
+            "category": "specials",
+            "image": "seafood_platter.jpg"
+        },
+        {
+            "title": "Chicken Parmesan",
+            "description": "Breaded chicken breast topped with marinara and mozzarella, served over pasta.",
+            "allergyInfo": "Contains gluten and dairy.",
+            "ingredients": ["Chicken breast", "Marinara sauce", "Mozzarella", "Pasta"],
+            "price": 15.99,
+            "category": "specials",
+            "image": "chicken_parmesan.jpg"
+        },
+        {
+            "title": "Lobster Roll",
+            "description": "Fresh lobster meat on a toasted roll, served with fries.",
+            "allergyInfo": "Contains shellfish and gluten.",
+            "ingredients": ["Lobster", "Roll", "Butter", "Fries"],
+            "price": 19.99,
+            "category": "specials",
+            "image": "lobster_roll.jpg"
+        },
+        {
+            "title": "Prime Rib",
+            "description": "Juicy prime rib served with au jus and roasted vegetables.",
+            "allergyInfo": "Contains none.",
+            "ingredients": ["Prime rib", "Au jus", "Vegetables"],
+            "price": 25.99,
+            "category": "specials",
+            "image": "prime_rib.jpg"
+        },
+        {
+            "title": "French Fries",
+            "description": "Crispy golden fries served with ketchup.",
+            "allergyInfo": "May contain traces of gluten.",
+            "ingredients": ["Potatoes", "Salt"],
+            "price": 3.49,
+            "category": "sides",
+            "image": "french_fries.jpg"
+        },
+        {
+            "title": "Onion Rings",
+            "description": "Beer-battered onion rings fried to perfection.",
+            "allergyInfo": "Contains gluten.",
+            "ingredients": ["Onions", "Beer batter"],
+            "price": 4.49,
+            "category": "sides",
+            "image": "onion_rings.jpg"
+        },
+        {
+            "title": "Mashed Potatoes",
+            "description": "Creamy mashed potatoes with butter and herbs.",
+            "allergyInfo": "Contains dairy.",
+            "ingredients": ["Potatoes", "Butter", "Herbs"],
+            "price": 3.99,
+            "category": "sides",
+            "image": "mashed_potatoe.jpg"
+        },
+        {
+            "title": "Steamed Vegetables",
+            "description": "Seasonal vegetables steamed to perfection.",
+            "allergyInfo": "None.",
+            "ingredients": ["Assorted vegetables"],
+            "price": 3.99,
+            "category": "sides",
+            "image": "steamed_vegetables.jpg"
+        },
+        {
+            "title": "Coleslaw",
+            "description": "Creamy coleslaw with a hint of sweetness.",
+            "allergyInfo": "Contains dairy.",
+            "ingredients": ["Cabbage", "Carrots", "Creamy dressing"],
+            "price": 2.99,
+            "category": "sides",
+            "image": "coleslaw.jpg"
+        },
+        {
+            "title": "House Salad",
+            "description": "Mixed greens with tomatoes, cucumbers, and a vinaigrette dressing.",
+            "allergyInfo": "None.",
+            "ingredients": ["Mixed greens", "Tomatoes", "Cucumbers", "Vinaigrette"],
+            "price": 4.49,
+            "category": "sides",
+            "image": "house_salad.jpg"
+        },
+        {
+            "title": "Veggie Burger",
+            "description": "Grilled veggie patty with lettuce, tomato, and avocado on a whole wheat bun.",
+            "allergyInfo": "Contains gluten.",
+            "ingredients": ["Veggie patty", "Lettuce", "Tomato", "Avocado", "Whole wheat bun"],
+            "price": 11.99,
+            "category": "vegetarian",
+            "image": "veggie_burger.jpg"
+        },
+        {
+            "title": "Pasta Primavera",
+            "description": "Pasta tossed with fresh vegetables and a light garlic sauce.",
+            "allergyInfo": "Contains gluten.",
+            "ingredients": ["Pasta", "Assorted vegetables", "Garlic sauce"],
+            "price": 13.49,
+            "category": "vegetarian",
+            "image": "pasta_primavera.jpg"
+        },
+        {
+            "title": "Grilled Vegetable Sandwich",
+            "description": "Grilled zucchini, bell peppers, and eggplant with hummus on ciabatta bread.",
+            "allergyInfo": "Contains gluten.",
+            "ingredients": ["Zucchini", "Bell peppers", "Eggplant", "Hummus", "Ciabatta bread"],
+            "price": 10.99,
+            "category": "vegetarian",
+            "image": "grilled_vegetable_sandwich.jpg"
+        },
+        {
+            "title": "Veggie Stir-Fry",
+            "description": "Assorted vegetables stir-fried with teriyaki sauce over rice.",
+            "allergyInfo": "Contains soy.",
+            "ingredients": ["Vegetables", "Teriyaki sauce", "Rice"],
+            "price": 12.99,
+            "category": "vegetarian",
+            "image": "veggie_stirfry.jpg"
+        },
+        {
+            "title": "Spinach and Feta Omelette",
+            "description": "Three-egg omelette with fresh spinach and feta cheese.",
+            "allergyInfo": "Contains dairy and eggs.",
+            "ingredients": ["Eggs", "Spinach", "Feta cheese"],
+            "price": 9.99,
+            "category": "vegetarian",
+            "image": "spinach_omelette.jpg"
+        },
+        {
+            "title": "Vegetable Curry",
+            "description": "A blend of vegetables simmered in a spicy curry sauce, served with rice.",
+            "allergyInfo": "Contains none.",
+            "ingredients": ["Vegetables", "Curry sauce", "Rice"],
+            "price": 13.49,
+            "category": "vegetarian",
+            "image": "vegetable_curry.jpg"
+        }
+    ]
+}
+

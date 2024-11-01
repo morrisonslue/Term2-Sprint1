@@ -1,0 +1,560 @@
+/* 
+Description: Global and individual stylings for the Gary Blue's Diner Homepage
+Authors: Chris Morrison, Steve Morrison - SD12
+Date(s): October 23 - Novemver 1, 2024
+Version 1.0
+*/
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+
+:root {
+    --medium-red: #8C1F28;
+    --dark-red: #591C21;
+    --bright-red: #D92525;
+    --medium-teal: #044040;
+    --light-gray: #D5D5D5;
+    --dark-gray: #1D1D1D;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+
+header {
+    background-color: var(--dark-red);
+    padding: 1rem 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--light-gray);
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu li:first-child {
+    margin-left: 0;
+}
+
+.nav-menu a {
+    color: var(--light-gray);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--bright-red);
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: var(--bright-red);
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-text-box {
+    background-color: rgba(29, 29, 29, 0.9); 
+    padding: 5rem;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--light-gray);
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons .btn {
+    margin: 0 0.5rem;
+}
+
+/* Button Styles */
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--medium-teal);
+    color: var(--light-gray);
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--bright-red);
+}
+
+/* About Us Section */
+
+.about-us {
+    padding: 4rem 0;
+    background-color: var(--light-gray);
+}
+
+.about-us .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--medium-red);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+}
+
+.about-image {
+    flex: 1;
+    padding: 1rem;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Awards Section */
+
+.awards {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.awards .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.awards-image {
+    flex: 1;
+    padding: 1rem;
+}
+
+.awards-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.awards-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.awards-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--medium-red);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.awards-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.awards-list li {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.awards-list img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+}
+
+/* Featured Dishes Section */
+
+.featured-dishes {
+    padding: 4rem 0;
+    background-color: var(--light-gray);
+}
+
+.featured-dishes h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--medium-red);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.dish-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dish-card:hover {
+    transform: translateY(-10px);
+}
+
+.dish-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dish-name {
+    font-family: 'Parisienne', cursive;
+    font-size: 1.75rem;
+    color: var(--bright-red);
+    margin: 1rem 0;
+}
+
+.dish-description {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Customer Reviews Section */
+
+.customer-reviews {
+    position: relative;
+    padding: 4rem 0;
+    background-image: url('../images/dinner_with_friends_hands_only_horizontal_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-gray);
+}
+
+.reviews-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.8);
+    top: 0;
+    left: 0;
+}
+
+.customer-reviews h2 {
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.reviews-carousel {
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
+}
+
+.review-card {
+    min-width: 300px;
+    margin-right: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+.review-card h3 {
+    font-size: 1.25rem;
+    color: var(--bright-red);
+    margin-bottom: 0.5rem;
+}
+
+.review-card p {
+    font-size: 1rem;
+    color: var(--light-gray);
+}
+
+/* Location and Hours Section */
+
+.location-hours {
+    padding: 4rem 0;
+    background-color: var(--medium-teal);
+    color: var(--light-gray);
+}
+
+.location-hours h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.location-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.address-hours {
+    flex: 1;
+    padding: 1rem;
+}
+
+.address-hours h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.address-hours p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.map {
+    flex: 1;
+    padding: 1rem;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+
+footer {
+    background-color: var(--dark-red);
+    color: var(--light-gray);
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-content > div {
+    flex: 1;
+    padding: 1rem;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-content ul li a {
+    color: var(--light-gray);
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-content ul li a:hover {
+    color: var(--bright-red);
+}
+
+.footer-content p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-content p img {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-content img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info .social-media {
+    margin-top: 1rem;
+}
+
+.contact-info .social-media a {
+    margin-right: 0.5rem;
+}
+
+.newsletter {
+    text-align: right;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5rem;
+    width: 250px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    margin-bottom: 1rem;
+}
+
+.newsletter button {
+    padding: 0.5rem;
+    background-color: var(--medium-teal);
+    border: none;
+    color: var(--light-gray);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+}
+
+.quick-links {
+    text-align: left;
+}
+
+
+
+
+

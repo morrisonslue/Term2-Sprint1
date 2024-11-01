@@ -1,0 +1,383 @@
+<!--
+Description: Page with information regarding online orders and online ordering forms
+Authors: Chris Morrison, Steve Morrison - SD12
+Date(s): October 23 - Novemver 1, 2024
+Version 1.0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online | Gary Blue's Diner</title>
+    <link rel="icon" href="../icons/burger.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/order-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    GARY BLUE'S DINER
+                </a>
+            </div>
+            <nav id="navbar">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="menu.html">
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="order.html" class="active">
+                            Order Online
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservations.html">
+                            Reservations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-order">
+        <img src="../images/grilled_snack_plate_horizontal_image.jpg" alt="Food from the diner" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>
+                Order Online
+            </h1>
+            <p>
+                Enjoy our delicious meals from the comfort of your home.
+            </p>
+            <p>
+                Order now and have your favorite dishes delivered to your doorstep!
+            </p>
+        </div>
+    </section>
+    <section class="steps-section">
+        <div class="container">
+            <div class="steps">
+                <div class="step">
+                    <img src="../images/cake_and_tea_horizontal_image.jpg" alt="Choose Items">
+                    <h3>
+                        1. Choose Your Items
+                    </h3>
+                    <p>
+                        Browse our menu and select your favorite dishes.
+                    </p>
+                </div>
+                <div class="step">
+                    <img src="../images/plate_of_fish_horizontal_image.jpg" alt="Provide Delivery Info">
+                    <h3>
+                        2. Provide Delivery Info
+                    </h3>
+                    <p>
+                        Enter your delivery details so we know where to bring your meal.
+                    </p>
+                </div>
+                <div class="step">
+                    <img src="../images/club_sandwich_horizontal_image.jpg" alt="Enjoy Your Meal">
+                    <h3>
+                        3. Enjoy Your Meal
+                    </h3>
+                    <p>
+                        Relax while we prepare and deliver your food straight to your door.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order-section">
+        <div class="container">
+            <h2>
+                Place Your Order
+            </h2>
+            <div id="delivery-info">
+                <h3>
+                    Delivery Information
+                </h3>
+                <form id="delivery-form">
+                    <div class="form-group">
+                        <label for="customer-name">
+                            Name:
+                        </label>
+                        <input type="text" id="customer-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-phone">
+                            Phone Number:
+                        </label>
+                        <input type="tel" id="customer-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-email">
+                            Email:
+                        </label>
+                        <input type="email" id="customer-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="street-number">
+                            Street Number:
+                        </label>
+                        <input type="text" id="street-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="street-name">
+                            Street Name:
+                        </label>
+                        <input type="text" id="street-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">
+                            City:
+                        </label>
+                        <input type="text" id="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="postal-code">
+                            Postal Code:
+                        </label>
+                        <input type="text" id="postal-code" required>
+                    </div>
+                    <button type="button" id="submit-delivery-info">
+                        Submit Delivery Information
+                    </button>
+                </form>
+                <div id="delivery-info-display"></div>
+            </div>
+            <div id="order-form-section">
+                <h3>
+                    Select Your Items
+                </h3>
+                <p>
+                    Max of 10 per item
+                </p>
+                <form id="order-form">
+                    <div class="form-group">
+                        <label for="category-select">
+                            Select Category:
+                        </label>
+                        <select id="category-select" required>
+                            <option value="">
+                                Choose a Category
+                            </option>
+                            <option value="appetizers">
+                                Appetizers
+                            </option>
+                            <option value="mains">
+                                Mains
+                            </option>
+                            <option value="vegetarian">
+                                Vegetarian
+                            </option>
+                            <option value="desserts">
+                                Desserts
+                            </option>
+                            <option value="drinks">
+                                Drinks
+                            </option>
+                            <option value="specials">
+                                Specials
+                            </option>
+                            <option value="sides">
+                                Sides
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-select">
+                            Select Item:
+                        </label>
+                        <select id="item-select" required>
+                            <option value="">
+                                Choose an Item
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-quantity">
+                            Quantity:
+                        </label>
+                        <input type="number" id="item-quantity" min="1" max="10" value="1" required>
+                    </div>
+                    <button type="button" id="add-to-order">
+                        Add to Order
+                    </button>
+                </form>
+                <div id="order-summary">
+                    <h4>
+                        Order Summary
+                    </h4>
+                    <table id="order-table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Item
+                                </th>
+                                <th>
+                                    Price
+                                </th>
+                                <th>
+                                    Quantity
+                                </th>
+                                <th>
+                                    Item Total
+                                </th>
+                                <th>
+                                    Remove
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="payment-summary">
+                <h3>
+                    Payment Summary
+                </h3>
+                <div id="summary-details">
+                    <p>
+                        Order Total: $<span id="order-total">0.00</span>
+                    </p>
+                    <p>
+                        Tax (15%): $<span id="tax-amount">0.00</span>
+                    </p>
+                    <div class="form-group">
+                        <label for="gratuity-type">
+                            Gratuity Type:
+                        </label>
+                        <select id="gratuity-type">
+                            <option value="none">
+                                Select Gratuity Type
+                            </option>
+                            <option value="amount">
+                                Amount ($)
+                            </option>
+                            <option value="percentage">
+                                Percentage (%)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="gratuity">
+                            Gratuity:
+                        </label>
+                        <input type="number" id="gratuity" min="0" step="0.01" value="0.00" disabled>
+                    </div>
+                    <p>
+                        Gratuity Amount: $<span id="gratuity-amount">0.00</span>
+                    </p>
+                    <p>
+                        Delivery Fee: $<span id="delivery-fee">10.00</span>
+                    </p>
+                    <p>
+                        <strong>Grand Total: $<span id="grand-total">0.00</span></strong>
+                    </p>
+                </div>
+                <button type="button" id="place-order">
+                    Place Order
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="quick-links">
+                    <h3>
+                        Quick Links
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu.html">
+                                Menu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="order.html">
+                                Order Online
+                            </a>
+                        </li>
+                        <li>
+                            <a href="reservations.html">
+                                Reservations
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <h3>
+                        Contact Us
+                    </h3>
+                    <p>
+                        <img src="../icons/phone.svg" alt="Phone Icon"> 
+                        (709) 123-4567
+                    </p>
+                    <p>
+                        <img src="../icons/email.svg" alt="Email Icon"> 
+                        info@garybluesdiner.com
+                    </p>
+                    <h3>
+                        Social
+                    </h3>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com"><img src="../icons/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com"><img src="../icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.x.com"><img src="../icons/twitter.svg" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h3>
+                        Join Our Newsletter
+                    </h3>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">
+                            Subscribe
+                        </button>
+                        <p id="newsletter-message"></p>
+                    </form>
+                </div>
+            </div>
+            <p class="footer-note">
+                &copy; 2024 Gary Blue's Diner. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="../js/order.js"></script>
+</body>
+</html>
+

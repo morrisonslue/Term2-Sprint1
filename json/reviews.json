@@ -1,0 +1,19 @@
+{
+    "reviews": [
+        {
+            "name": "Chris Morrison",
+            "rating": 5,
+            "comment": "The best diner in town! The signature burger is really really really good."
+        },
+        {
+            "name": "Steve Morrison",
+            "rating": 5,
+            "comment": "Amazing food and friendly staff. Feels like home every time I visit."
+        },
+        {
+            "name": "Keyin McStudent",
+            "rating": 5,
+            "comment": "I love their homestyle apple pie; it's the perfect end to an intense study session."
+        }
+    ]
+}
